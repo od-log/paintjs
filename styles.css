@@ -1,0 +1,51 @@
+@import "reset.css";
+body {
+    background-color: #f6f9fc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vh;
+}
+
+.canvas {
+    width: 80vw;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 93, 0.11);
+}
+
+.controls{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls__btns button {
+    all: unset;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 5px 10px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 93, 0.11);
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 15px;
+}
+
+.controls__btns button:active {
+    transform: scale(0.98);
+}
+
+.controls .controls__colors {
+    margin-top: 2vh;
+    display: flex;
+}
+
+.controls__colors .controls__color{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 93, 0.11);
+    cursor: pointer;
+}
